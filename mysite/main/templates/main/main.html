@@ -1,0 +1,19 @@
+{% extends  'main/envelope.html' %}
+{% block title %} {{title}} {% endblock %}
+
+{% block body %}
+    <div class="features">
+        <h1>{{title}}</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda, delectus, deserunt, dolorum enim eum ex impedit libero magnam nisi officia omnis perferendis quisquam repellendus unde veritatis voluptate! Cum, maxime?</p>
+        <button class="btn btn-warning">Кнопка</button>
+
+        {% for i in values %}
+            <p>{{i}}</p>
+        {% endfor %}
+
+        {% for i in obj %}
+            <p>{{i}}</p>
+        {% endfor %}
+    </div>
+    </div>
+{% endblock %}
